@@ -13,7 +13,8 @@ const forecast=(latitude,longitude,callback)=>{
             callback('Location Missing!!',undefined);
         }else{
 
-            callback(undefined,body.current.weather_descriptions[0] + '.The temperature is ' + body.current.temperature + '  degree. Time of forecast is : ' + body.current.observation_time + '. And humidity is : ' + body.current.humidity)
+            callback(undefined,body.current.weather_descriptions[0] + '.The temperature is ' + body.current.temperature + '  degree. Time of forecast is : ' + body.current.observation_time + 
+            'And humidity is : ' + body.current.humidity +'%')
         }
     })
 
